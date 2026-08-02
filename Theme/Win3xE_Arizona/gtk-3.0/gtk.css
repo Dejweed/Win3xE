@@ -126,3 +126,5 @@ Defined in gtk-base.css
 @define-color wm_button_active_color_b alpha(@selected_bg_color, 0.85);
 @define-color wm_button_active_color_c alpha(@selected_bg_color, 0.85);
 @define-color content_view_bg @base_color;
+/* Libadwaita */
+@define-color accent_color @selected_bg_color;
