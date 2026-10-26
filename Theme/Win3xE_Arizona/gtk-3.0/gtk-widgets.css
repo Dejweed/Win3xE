@@ -2447,3 +2447,12 @@ UnityPanelWidget, .unity-panel {
   -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
   animation: playbackmenuitem_spinner 1s infinite linear;
   color: @theme_selected_bg_color; }
+
+  /****************
+ * virt-manager *
+ ***************/
+window > box > notebook > stack > box > notebook > stack > notebook > stack > overlay > * {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
