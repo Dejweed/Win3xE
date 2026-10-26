@@ -277,6 +277,10 @@ view.content-view check, .content-view.view check {
 view.content-view check:hover, view.content-view check:disabled, view.content-view check:selected {
   background-color: transparent; }
 
+.view:focus {
+	outline-offset: -1px;
+}
+
 check, radio, check:disabled, radio:disabled {
   margin: 4px;
   border-style: none;
