@@ -68,6 +68,8 @@
 @define-color info_bg_color #0055FF;
 @define-color warning_fg_color #FFFFFF;
 @define-color warning_bg_color #FF8300;
+@define-color info_fg_color @selected_fg_color;
+@define-color info_bg_color @selected_bg_color;
 @define-color question_fg_color #FFFFFF;
 @define-color question_bg_color #2C2C2C;
 @define-color error_fg_color #FFFFFF;
