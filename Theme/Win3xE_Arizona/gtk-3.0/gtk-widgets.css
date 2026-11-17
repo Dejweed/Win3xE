@@ -2394,7 +2394,37 @@ panel-toplevel.background na-tray-applet {
     #XfceNotifyWindow.osd button:disabled {
       color: mix(@theme_fg_color, @theme_unfocused_disabled_fg_color, 0.5); }
 
+#whiskermenu-window frame > border {
+  border: 2px solid black; }
 
+#docklike-plugin .group {
+  box-shadow: none;
+  border-radius: 2px;
+  border: 1px solid transparent; }
+
+#docklike-plugin .open_group {
+  background-color: @taskbar_bg_color;
+  border-color: @borders;
+  box-shadow: inset -2px 0 shade(@button_bg_color, 0.65), inset 0 -2px shade(@button_bg_color, 0.65), inset 1px 0 @light_shadow, inset 0 1px @light_shadow; }
+
+#docklike-plugin .active_group {
+background-size: 3px 3px, auto;
+background-image: none;
+background-color: @button_bg_color;
+box-shadow: inset 1px 0 shade(@button_bg_color, 0.5), inset 0 1px shade(@button_bg_color, 0.5), inset -1px 0 shade(@button_bg_color, 0.85), inset 0 -1px shade(@button_bg_color, 0.85); }
+
+/* I didn't find a way to add a 2px border, using box-shadow instead */
+window.xfce-docklike-window .menu {
+  background-color: @menubar_bg_color;
+  color: @menubar_fg_color;
+  box-shadow: inset 2px 2px black,
+  inset 2px 2px black,
+  inset -2px -2px black,
+  inset -2px -2px black; }
+
+  /* hover effect could be better, this is the best I came up with for now*/
+window.xfce-docklike-window .hover_menu_item {
+  color: @selected_bg_color; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 0 0 0;
